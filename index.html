@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুরআনুল কারীম</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=SolaimanLipi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>কুরআনুল কারীম</h1>
+        <p>আল কুরআনের অনুবাদ এবং আয়াত প্রদর্শন</p>
+    </header>
+
+    <main id="main-content">
+        <!-- Dropdown Controls in a Single Row -->
+        <div class="controls-container">
+            <div class="control">
+                <label for="suraSelect">সুরা নির্বাচন করুন:</label>
+                <select id="suraSelect" class="dropdown">
+                    <option value="">একটি সূরা নির্বাচন করুন</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="translationSelect">অনুবাদ নির্বাচন করুন:</label>
+                <select id="translationSelect" class="dropdown">
+                    <option value="bengali-johurul">বাংলা - জহুরুল হক</option>
+                    <option value="bengali-mohiuddin">বাংলা - মহিউদ্দিন খান</option>
+                    <option value="bengali-ahmad">বাংলা - আহমদ রেজা</option>
+                    <option value="english-sahih">ইংরেজি - সহি ইন্টারন্যাশনাল</option>
+                    <option value="english-ahmad">ইংরেজি - আহমদ রেজা</option>
+                </select>
+            </div>
+ <div class="control">
+                <label for="arabicColor">আরবি টেক্সটের রঙ:</label>
+                <select id="arabicColor" class="dropdown">
+    <option value="#1e3a8a" style="color: #1e3a8a;">রয়েল ব্লু</option>
+    <option value="#d32f2f" style="color: #d32f2f;">গার্নেট রেড</option>
+    <option value="#2e7d32" style="color: #2e7d32;">এমারেল্ড সবুজ</option>
+    <option value="#f57c00" style="color: #f57c00;">অ্যাম্বার অরেঞ্জ</option>
+    <option value="#6a1b9a" style="color: #6a1b9a;">ডিপ পার্পল</option>
+    <option value="#039be5" style="color: #039be5;">স্কাই ব্লু</option>
+    <option value="#8d6e63" style="color: #8d6e63;">কফি ব্রাউন</option>
+    <option value="#fdd835" style="color: #fdd835;">গোল্ডেন ইয়েলো</option>
+</select>
+
+            </div>
+            <div class="control">
+                <label for="bengaliColor">বাংলা টেক্সটের রঙ:</label>
+              <select id="bengaliColor" class="dropdown">
+    <option value="#283593" style="color: #283593;">গাঢ় নীল</option>
+    <option value="#d50000" style="color: #d50000;">রেড অ্যালার্ট</option>
+    <option value="#00897b" style="color: #00897b;">তাম্র সবুজ</option>
+    <option value="#7b1fa2" style="color: #7b1fa2;">মেজেন্টা</option>
+    <option value="#fbc02d" style="color: #fbc02d;">হালকা হলুদ</option>
+    <option value="#009688" style="color: #009688;">ফিরোজা</option>
+    <option value="#1565c0" style="color: #1565c0;">আকাশী নীল</option>
+    <option value="#8e24aa" style="color: #8e24aa;">গাঢ় গোলাপী</option>
+</select>
+
+
+            </div>
+            <button id="applyColors" class="apply-button">রঙ প্রয়োগ করুন</button>
+
+
+  
+</div>
+
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+    <button id="searchButton">অনুসন্ধান</button>
+</div>
+</div>
+
+
+        </div>
+
+
+        <div id="ayaContainer">
+       <div id="metadataContainer"></div>
+
+    <!-- Example Ayat with Sura and Ayat numbers -->
+    <div class="aya" data-sura="১" data-aya="১">
+        <div class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <div class="translation-text">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+    </div>
+    <div class="aya" data-sura="১" data-aya="২">
+        <div class="arabic-text">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+        <div class="translation-text">সকল প্রশংসা আল্লাহর যিনি সকল সৃষ্টির প্রতিপালক।</div>
+    </div>
+    <!-- আরও আয়াত যোগ করুন -->
+</div>
+
+    </main>
+
+    <script src="script_best.js"></script>
+</body>
+</html>
